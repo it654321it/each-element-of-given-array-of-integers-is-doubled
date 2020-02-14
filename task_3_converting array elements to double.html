@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html lang="en", charset="UTF-8">
+
+ <head>
+   <title>Kata 3</title>
+ </head>
+
+  <body>
+
+// This code converts each element of given array to double value.
+
+    <script>
+    'use strict';
+    let OriginalArray = [];
+    
+        function ReceiveAllElements (n) {
+         let x = 1;
+          while ( x <= n) {
+          OriginalArray [x] = prompt ('Give me ' + x + ' element of your array');
+          x++;
+          }
+        return;
+        };
+      
+      let quantityArray = prompt ('What is quantity of array?');
+      ReceiveAllElements (quantityArray);
+      
+            function DoubleEachElement (n) {
+              let NewArray = [];
+              let i = 1;
+                  while ( i <= quantityArray) {
+                  NewArray [i] = OriginalArray [i] * 2;
+                  alert('Old element is ' + OriginalArray [i] + '. New doubled element is ' + NewArray [i]);
+                  i++;
+                  }
+            return;
+            };
+      DoubleEachElement (quantityArray);
+      
+    </script>
+  </body>
+</html>    
